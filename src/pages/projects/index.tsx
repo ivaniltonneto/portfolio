@@ -1,11 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import {
-  Container,
-  Content,
-  Ul,
-  Li
-} from "./style";
+import Container, { Content, Ul, Li } from "./style";
 
 interface IItem {
   id: number;

@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 
 import ItemContact from "../../../components/ItemContact";
-import { Container, Content } from "./style";
+import Container, { Content } from "./style";
 
 const Contact = () => {
   return (
