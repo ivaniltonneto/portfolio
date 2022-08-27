@@ -45,14 +45,14 @@ export const Name = styled.span`
 `;
 
 export const Function = styled.span`
-  color: lightgray;
+  color: black;
   margin-bottom: 10px;
 `;
 
 export const Intro = styled.span`
-  color: lightgray;
+  color: black;
   text-align: justify;
-
+  
   @media (max-width: 760px) {
     font-size: 15px;
   }

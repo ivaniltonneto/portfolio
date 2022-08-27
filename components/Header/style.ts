@@ -30,7 +30,7 @@ export const NavLinks = styled.nav<INavProps>`
 
   @media (max-width: 560px) {
     flex-direction: column;
-    background-color: #161616;
+    background-color: FFFFF;
     position: fixed;
     height: 100%;
 
@@ -56,7 +56,7 @@ export const Ancora = styled.a`
   transition: 0.3s;
   
   &.active {
-    background-color: black;
+    background-color: white;
   }
 
   @media (min-width: 560px) {
