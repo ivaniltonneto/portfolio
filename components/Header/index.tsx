@@ -3,7 +3,8 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
-import { Container, Title, NavLinks, Ancora, Content, Menu, CloseSidebar, ContentTitle, SubTitle } from './style'
+import { Container, Title, NavLinks, Ancora, Content, Menu, CloseSidebar, ContentTitle } from './style'
+
 
 const Header = () => {
   const [sidebar, setSidebar] = useState(false)
@@ -11,7 +12,7 @@ const Header = () => {
 
   const showSiderbar = () => setSidebar(!sidebar)
 
-  const activeLink = (path) =>{
+  const activeLink = (path: string) =>{
     return asPath === `/${path}` ? 'active' : ''
   }
 
@@ -22,9 +23,9 @@ const Header = () => {
           <Title>
             Ivanilton Neto
           </Title>
-          <SubTitle>
+          <span>
             Portfolio Pessoal
-          </SubTitle>
+          </span>
         </ContentTitle>
         <Menu>
           <FaBars onClick={showSiderbar} />

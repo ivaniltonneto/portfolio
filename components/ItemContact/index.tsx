@@ -1,8 +1,14 @@
 import React from 'react'
+import { IconType } from 'react-icons'
 
 import { Item, Icon, Text } from './style'
 
-const ItemContact = ({ IconFa, LinkContact }) => {
+interface IItemContactProps{
+  IconFa: IconType
+  LinkContact: string
+}
+
+const ItemContact = ({ IconFa, LinkContact }: IItemContactProps) => {
   return (
     <Item>
       <Icon>

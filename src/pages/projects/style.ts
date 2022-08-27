@@ -50,10 +50,6 @@ export const Li = styled.li`
   @media (max-width: 760px) {
     font-size: 13px;
   }
-`;
+`
 
-export const TitleProject = styled.strong``;
 
-export const Url = styled.span``;
-
-export const Created_at = styled.span``;

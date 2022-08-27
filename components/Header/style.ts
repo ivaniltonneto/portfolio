@@ -20,7 +20,11 @@ export const Title = styled.div`
   font-size: 30px;
 `;
 
-export const NavLinks = styled.nav`
+interface INavProps{
+  sidebar: boolean
+}
+
+export const NavLinks = styled.nav<INavProps>`
   display: flex;
   gap: 20px;
 
@@ -89,4 +93,3 @@ export const ContentTitle = styled.div`
   text-align: end;
 `;
 
-export const SubTitle = styled.span``;

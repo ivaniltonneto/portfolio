@@ -4,10 +4,7 @@ import {
   Container,
   Content,
   Ul,
-  Li,
-  TitleProject,
-  Url,
-  Created_at,
+  Li
 } from "./style";
 
 interface IItem {
@@ -52,12 +49,12 @@ const Projects = () => {
         <Ul>
           {itemsApi.map((item: IItem) => (
             <Li key={item.id}>
-              <TitleProject>{item.name.toUpperCase()}</TitleProject>
-              <Url>URL: {item.url}</Url>
-              <Created_at>
+              <strong>{item.name.toUpperCase()}</strong>
+              <span>URL: {item.url}</span>
+              <span>
                 Data Criação:{" "}
                 {Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}
-              </Created_at>
+              </span>
             </Li>
           ))}
         </Ul>

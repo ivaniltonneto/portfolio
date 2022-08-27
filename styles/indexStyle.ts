@@ -94,4 +94,6 @@ export const Logo = styled.div`
   }
 `;
 
-export const Img = styled.img``;
+export const Img = styled.img`
+  background-color: none;
+`;
