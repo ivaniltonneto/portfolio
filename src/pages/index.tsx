@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { FaArrowRight } from "react-icons/fa";
 import {
   Container,
@@ -7,8 +8,7 @@ import {
   Function,
   Intro,
   LinkProjects,
-  Logo,
-  Img,
+  Logo,  
 } from "../../styles/indexStyle";
 import Link from "next/link";
 
@@ -32,7 +32,7 @@ const Home = () => {
           </Link>
         </Infos>
         <Logo>
-          <Img src="/images/logo.png" alt="logo" />
+          <img src="/images/logo1.png" alt="logo" />
         </Logo>
       </Content>
     </Container>

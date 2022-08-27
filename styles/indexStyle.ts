@@ -94,25 +94,4 @@ export const Logo = styled.div`
   }
 `;
 
-export const Img = styled.img`  
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 
-  img {
-    width: 25rem;
-    height: 25rem;
-  }
-
-  @media (max-width: 760px) {
-    width: 90%;
-  }
-
-  @media (max-width: 600px) {
-    img {
-      width: 18rem;
-      height: 18rem;
-    }
-  }
-`;
