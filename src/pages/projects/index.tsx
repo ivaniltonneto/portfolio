@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 
-import Container, { Content, Ul, Li } from "./style";
+import Container, { Content, Ul, Li, Span } from "./style";
 
 interface IItem {
   id: number;
   name: string;
-  url: string;
-  created_at: string;
+  svn_url: string;
+  description: string;
+  homepage: string;
 }
 
 interface IRes {
@@ -36,8 +37,7 @@ const Projects = () => {
     getGitHubAPI();
 
     return () => abortController.abort();
-  }, []);
-
+  }, []);  
   return (
     <Container>
       <Content>
@@ -45,11 +45,11 @@ const Projects = () => {
           {itemsApi.map((item: IItem) => (
             <Li key={item.id}>
               <strong>{item.name.toUpperCase()}</strong>
-              <span>URL: {item.url}</span>
-              <span>
-                Data Criação:{" "}
-                {Intl.DateTimeFormat("pt-BR").format(new Date(item.created_at))}
-              </span>
+              <Span>
+                Page: <a href={item.homepage}>Acessar site!</a>
+              </Span>
+              <Span>Git: {item.svn_url}</Span>
+              <Span>Descrição: {item.description}</Span>
             </Li>
           ))}
         </Ul>

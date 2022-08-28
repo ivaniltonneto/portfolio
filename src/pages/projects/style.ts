@@ -45,11 +45,22 @@ export const Li = styled.li`
   box-shadow: 1px 1px 1px 2px gray;
   gap: 5px;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px; 
+
+  strong{
+    margin-bottom: 10px;
+  }
 
   @media (max-width: 760px) {
     font-size: 13px;
   }
+`
+export const Span = styled.span`
+  color: #ffffa9;  
+   a{    
+      text-decoration: none;
+      color: inherit;
+    }
 `
 
 

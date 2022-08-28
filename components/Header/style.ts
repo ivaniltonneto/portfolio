@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.div`  
   height: 100px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #ffffa9;
 `;
 
 export const Content = styled.div`
@@ -13,7 +13,7 @@ export const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  padding: 0 20px;  
 `;
 
 export const Title = styled.div`
@@ -91,5 +91,8 @@ export const CloseSidebar = styled.div`
 
 export const ContentTitle = styled.div`
   text-align: end;
+  span{
+    color: #ffffa9;
+  }
 `;
 

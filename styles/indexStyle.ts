@@ -45,12 +45,12 @@ export const Name = styled.span`
 `;
 
 export const Function = styled.span`
-  color: black;
+  color: #ffffa9;
   margin-bottom: 10px;
 `;
 
 export const Intro = styled.span`
-  color: black;
+  color: #efb810;
   text-align: justify;
   
   @media (max-width: 760px) {
