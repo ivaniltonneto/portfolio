@@ -27,10 +27,11 @@ interface INavProps{
 export const NavLinks = styled.nav<INavProps>`
   display: flex;
   gap: 20px;
+  
 
   @media (max-width: 560px) {
-    flex-direction: column;
-    background-color: FFFFF;
+    flex-direction: column;    
+    background-color: black;
     position: fixed;
     height: 100%;
 
@@ -38,7 +39,7 @@ export const NavLinks = styled.nav<INavProps>`
     top: 0px;
     right: 0px;
     width: 60%;
-    right: ${props => props.sidebar ? '0' : '-100%'};
+    right: ${props => props.sidebar ? '0' : '-100%'};    
     transition: 0.5s;
 
     a {
@@ -56,7 +57,7 @@ export const Ancora = styled.a`
   transition: 0.3s;
   
   &.active {
-    background-color: white;
+    background-color: #303030;
   }
 
   @media (min-width: 560px) {

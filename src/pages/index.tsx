@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { FaArrowRight } from "react-icons/fa";
-import {
-  Container,
+import Container,{  
   Content,
   Infos,
   Name,
@@ -20,10 +19,7 @@ const Home = () => {
           <Name>Olá, sou Ivanilton Neto</Name>
           <Function>Front-end Developer</Function>
           <Intro>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure
-            doloremque voluptas nihil ipsa, provident consequatur praesentium
-            odio nobis officia distinctio ut! Aut sapiente adipisci cupiditate
-            quam iste? Veniam, deleniti ratione.
+            Estudei fron-end na Kenzie Academy Brasil, onde na mesma fui monitor no primeiro período e no segundo, participei de alguns projetos front-end onde os mesmo podem ser encontrados na opção projetos. Nos projetos quais participei e nos meus projetos pessoal, ultilezeis das tecnologias react, typescript, node, java script, html, css e styled components. Continuo estudando na Kenzie Academy agora com foco em back-end.
           </Intro>
           <Link href="projects">
             <LinkProjects>
