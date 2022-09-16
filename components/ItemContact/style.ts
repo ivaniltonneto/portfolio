@@ -8,9 +8,8 @@ export const Item = styled.div`
   align-items: center;
   word-break: break-word;
 
-  
   @media (max-width: 760px) {
-   font-size: 12px;
+    font-size: 12px;
   }
 `;
 
@@ -27,4 +26,9 @@ export const Icon = styled.div`
 export const Text = styled.div`
   color: #ffffa9;
   text-align: start;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;

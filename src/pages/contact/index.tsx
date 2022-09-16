@@ -4,6 +4,7 @@ import {
   FaFacebook,
   FaInstagram,
   FaEnvelope,
+  FaGithubSquare
 } from "react-icons/fa";
 
 import ItemContact from "../../../components/ItemContact";
@@ -21,10 +22,12 @@ const Contact = () => {
           IconFa={FaFacebook}
           LinkContact="https://www.facebook.com/ivanilton.neto/"
         />
+        
         <ItemContact
           IconFa={FaInstagram}
           LinkContact="https://www.instagram.com/ivanilton_neto/"
         />
+        <ItemContact IconFa={FaGithubSquare} LinkContact="https://github.com/ivaniltonneto"/>
         <ItemContact IconFa={FaEnvelope} LinkContact="netijua@gmail.com" />
       </Content>
     </Container>

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import Container, { Content, Ul, Li, Span } from "./style";
+import Container, { Content, Ul, Li, Span, SpanTec } from "./style";
 
 interface IItem {
   id: number;
@@ -8,6 +8,7 @@ interface IItem {
   svn_url: string;
   description: string;
   homepage: string;
+  topics: string[];
 }
 
 interface IRes {
@@ -24,11 +25,11 @@ const Projects = () => {
 
     function getGitHubAPI() {
       fetch("https://api.github.com/users/ivaniltonneto/repos")
-        .then(async (res: IRes) => {
+        .then(async (res: IRes) => {          
           if (!res.ok) {
             throw new Error(res.status);
           }
-          var data = await res.json();
+          let data = await res.json();          
           setItemsApi(data);
         })
         .catch((e) => console.log(e));
@@ -38,18 +39,20 @@ const Projects = () => {
 
     return () => abortController.abort();
   }, []);  
+  console.log(itemsApi)
   return (
     <Container>
       <Content>
         <Ul>
-          {itemsApi.map((item: IItem) => (
+          {itemsApi.map((item: IItem) => (                        
             <Li key={item.id}>
-              <strong>{item.name.toUpperCase()}</strong>
-              <Span>
-                Page: <a href={item.homepage}>Acessar site!</a>
+              <strong>{item.name.toUpperCase().replace(/-/g," ")}</strong>
+              <Span>                
+                Page: <a href={item.homepage} target="_blank" rel="noreferrer">Acessar site!</a>
               </Span>
-              <Span>Git: {item.svn_url}</Span>
+              <Span>Git:<a href={item.svn_url} target="_blank" rel="noreferrer"> {item.svn_url}</a> </Span>
               <Span>Descrição: {item.description}</Span>
+              <SpanTec>Tecnologias: {item.topics.toString().replace(/,/g,", ")}</SpanTec>
             </Li>
           ))}
         </Ul>

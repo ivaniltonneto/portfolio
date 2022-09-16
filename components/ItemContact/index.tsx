@@ -15,7 +15,7 @@ const ItemContact = ({ IconFa, LinkContact }: IItemContactProps) => {
         <IconFa />
       </Icon>
       <Text>
-        {LinkContact}
+        <a href={LinkContact} target="_blank" rel="noreferrer">{LinkContact}</a>
       </Text>
     </Item>
   )

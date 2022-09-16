@@ -62,6 +62,12 @@ export const Span = styled.span`
       color: inherit;
     }
 `
-
+export const SpanTec = styled.span`
+  color: #f5f565;  
+   a{    
+      text-decoration: none;
+      color: inherit;
+    }
+`
 
 export default Container

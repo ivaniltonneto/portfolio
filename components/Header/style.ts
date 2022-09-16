@@ -27,10 +27,10 @@ interface INavProps{
 export const NavLinks = styled.nav<INavProps>`
   display: flex;
   gap: 20px;
-
+  
   @media (max-width: 560px) {
     flex-direction: column;
-    background-color: FFFFF;
+    background-color: #000;
     position: fixed;
     height: 100%;
 
@@ -56,7 +56,7 @@ export const Ancora = styled.a`
   transition: 0.3s;
   
   &.active {
-    background-color: white;
+    background-color: #404040;
   }
 
   @media (min-width: 560px) {
